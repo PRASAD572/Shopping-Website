@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>orderr-booking-form</title>
+	<link rel="stylesheet" href="buy.css">
+
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+	</script>
+	<!-- <script type="text/javascript">
+   (function(){
+      emailjs.init("LaGjzuxhKerZqq3Q4");
+   })();
+</script> -->
+
+
+
+	<link rel="icon" type="image/png" href="favicon-32x32.png" />
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/linearicons-v1.0.0/icon-font.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/MagnificPopup/magnific-popup.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+
+
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+
+<body style="background-color: #1E1E28;">
+	<center>
+		<div style="padding-top: 3%; margin-bottom: 1rem;">
+			<h1> Place Your Order</h1>
+		</div>
+
+
+
+		<div class="razorpay-embed-btn" data-url="https://rzp.io/l/d0kvT2RJN3" data-text="Pay Now" data-color="#528FF0" data-size="large">
+			<script>
+			  (function(){
+				var d=document; var x=!d.getElementById('razorpay-embed-btn-js')
+				if(x){ var s=d.createElement('script'); s.defer=!0;s.id='razorpay-embed-btn-js';
+				s.src='https://cdn.razorpay.com/static/embed_btn/bundle.js';d.body.appendChild(s);} else{var rzp=window['_rzp_'];
+				rzp && rzp.init && rzp.init()}})();
+			</script>
+		  </div>
+
+		<div style="font-size: 12.5px;margin-top: 1rem;">
+			No need to fill below form for online payment.
+		</div>
+
+		<div style="height: 5px; margin-left:2rem; margin-right: 2rem;margin-top: 1rem; background-color: white;">
+
+		</div>
+
+
+
+		<form method="post" name="google-sheet">
+			<input name="name" type="text" class="feedback-input" placeholder="Name" required>
+			<input name="email" type="text" class="feedback-input" placeholder="Email" required>
+			<input name="phone" type="tel" class="feedback-input" placeholder="Mobile Number" required>
+			<input name="address" type="text" class="feedback-input" placeholder="Full Address" required>
+			<!-- <H4 style="color: white;">Brazil Away Jersey</H4><br> -->
+			<select name="Jersey" id="Jersey" style=" padding:  2%; padding-left: 10%; margin-bottom: 2%;"
+				class="feedback-input">
+				<!-- <option> Selecet Jersey</option>
+				<option>Argentina Dark Purple Jersey Short & Scocks</option>
+				<option>Manchester United Red Jersey Short & Scocks</option> -->
+				<option>Brazil Away Jersey</option>
+				<!-- <option>Grey</option> -->
+			</select><br>
+			<select name="size" id="size" style=" padding:  2%; padding-left: 10%; margin-bottom: 2%;"
+				class="feedback-input">
+				<option> Selecet Size</option>
+				<option>L</option>
+				<!--  <option></option>
+         <option>Brazil Blue Jersey</option>
+         <option>Grey</option> -->
+			</select><br>
+			<div class="selector flex-w flex-r-m p-b-10" >
+				<div class="size-204 flex-w flex-m respon6-next">
+					<div class="wrap-num-product flex-w m-r-20 m-tb-10">
+						<div class="btn-num-product-down cl8 hov-btn3 trans-04 flex-c-m">
+							<i class="fs-16 zmdi zmdi-minus"></i>
+						</div>
+
+						<input class="mtext-104 cl3 txt-center num-product" type="number" id="quantity" name="quantity"
+							value="1">
+
+						<div class="btn-num-product-up cl8 hov-btn3 trans-04 flex-c-m">
+							<i class="fs-16 zmdi zmdi-plus"></i>
+						</div>
+					</div>
+
+
+				</div>
+			</div> 
+
+
+
+			<input type="submit" id="s" value="Cash On Delivery" name="submit" class="COD"
+				>
+
+
+
+
+
+		</form>
+	</center>
+
+<!-- Footer -->
+<footer class="bg3 p-t-75 p-b-32">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 col-lg-3 p-b-50">
+				<h4 class="stext-301 cl0 p-b-30">
+					Categories
+				</h4>
+
+				<ul>
+					<li class="p-b-10">
+						<a href="product.html" class="stext-107 cl7 hov-cl1 trans-04">
+							Women
+						</a>
+					</li>
+
+					<li class="p-b-10">
+						<a href="product.html" class="stext-107 cl7 hov-cl1 trans-04">
+							Men
+						</a>
+					</li>
+
+					<li class="p-b-10">
+						<a href="product.html" class="stext-107 cl7 hov-cl1 trans-04">
+							Shoes
+						</a>
+					</li>
+
+					<li class="p-b-10">
+						<a href="product.html" class="stext-107 cl7 hov-cl1 trans-04">
+							Watches
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="col-sm-6 col-lg-3 p-b-50">
+				<h4 class="stext-301 cl0 p-b-30">
+					Help
+				</h4>
+
+				<ul>
+					<li class="p-b-10">
+						<a href="refund.html" class="stext-107 cl7 hov-cl1 trans-04">
+							Track Order
+						</a>
+					</li>
+					<li class="p-b-10">
+						<a href="terms.html" class="stext-107 cl7 hov-cl1 trans-04">
+							Terms & Conditions
+						</a>
+					</li>
+
+					<li class="p-b-10">
+						<a href="refund.html" class="stext-107 cl7 hov-cl1 trans-04">
+							Returns/Cancellation  
+						</a>
+					</li>
+
+					<li class="p-b-10">
+						<a href="ship.html" class="stext-107 cl7 hov-cl1 trans-04">
+							Shipping
+						</a>
+					</li>
+
+					<li class="p-b-10">
+						<a href="ship.html" class="stext-107 cl7 hov-cl1 trans-04">
+							FAQs
+						</a>
+					</li>
+					<li class="p-b-10">
+						<a href="policy.html" class="stext-107 cl7 hov-cl1 trans-04">
+							Privacy Policy
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="col-sm-6 col-lg-3 p-b-50">
+				<h4 class="stext-301 cl0 p-b-30">
+					GET IN TOUCH
+				</h4>
+
+				<p class="stext-107 cl7 size-201">
+					Any questions? Let us know in store at 1st floor, 109 Gulabtara height , raisoni College road wagholi pune, 412207 or call us on (+91) 86007 65187<br>(+91) 91751 39130<br>(+91) 98902 81333 <br>affmecontact@gmail.com
+
+				</p>
+
+				<div class="p-t-27">
+					<a href="#" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
+						<i class="fa fa-facebook"></i>
+					</a>
+
+					<a href="https://www.instagram.com/affme.shop" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
+						<i class="fa fa-instagram"></i>
+					</a>
+
+					<a href="#" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
+						<i class="fa fa-pinterest-p"></i>
+					</a>
+				</div>
+			</div>
+
+			<div class="col-sm-6 col-lg-3 p-b-50">
+				<h4 class="stext-301 cl0 p-b-30">
+					Newsletter
+				</h4>
+
+				<form>
+					<div class="wrap-input1 w-full p-b-4">
+						<input class="input1 bg-none plh1 stext-107 cl7" type="text" name="email" placeholder="email@example.com">
+						<div class="focus-input1 trans-04"></div>
+					</div>
+
+					<div class="p-t-18">
+						<button class="flex-c-m stext-101 cl0 size-103 bg1 bor1 hov-btn2 p-lr-15 trans-04">
+							Subscribe
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div class="p-t-40">
+			<div class="flex-c-m flex-w p-b-18">
+				<a href="#" class="m-all-1">
+					<img src="images/icons/icon-pay-01.png" alt="ICON-PAY">
+				</a>
+
+				<a href="#" class="m-all-1">
+					<img src="images/icons/icon-pay-02.png" alt="ICON-PAY">
+				</a>
+
+				<a href="#" class="m-all-1">
+					<img src="images/icons/icon-pay-03.png" alt="ICON-PAY">
+				</a>
+
+				<a href="#" class="m-all-1">
+					<img src="images/icons/icon-pay-04.png" alt="ICON-PAY">
+				</a>
+
+				<a href="#" class="m-all-1">
+					<img src="images/icons/icon-pay-05.png" alt="ICON-PAY">
+				</a>
+			</div>
+
+			<p class="stext-107 cl6 txt-center">
+				<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by  Affme<!-- <a href="https://colorlib.com" target="_blank">Colorlib</a> &amp; distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a> --> 
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+
+			</p>
+		</div>
+	</div>
+</footer>
+
+
+	<!--  <div class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+      </div>
+      
+      <h1 class="submit-feedback">YOUR FORM HAS BEEN SENT</h1>
+
+       -->
+	<script>
+		const scriptURL = 'https://script.google.com/macros/s/AKfycbw2zNxzBkog2YjKaRRPLO7Sy9DfnFAHs0F247hSHNaZoYZ7Y_yaWXhl4TCsMun5B2AWCw/exec'
+		const form = document.forms['google-sheet'];
+		form.addEventListener('submit', e => {
+			e.preventDefault();
+			fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+				.then(response => {
+					if (response.ok) {
+						// SweetAlert for successful submission
+						Swal.fire({
+							icon: 'success',
+							title: 'Successful!',
+							text: 'Your Order is Placed',
+							confirmButtonText: 'OK'
+						}).then(() => {
+							// Redirect to the home page (index.html)
+							window.location.href = 'index.html';
+						});
+					} else {
+						console.error('Error!', response.statusText);
+					}
+				})
+				.catch(error => console.error('Error!', error.message));
+		});
+		
+		
+	</script>
+
+
+
+
+	<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+	<script>
+		$(".js-select2").each(function () {
+			$(this).select2({
+				minimumResultsForSearch: 20,
+				dropdownParent: $(this).next('.dropDownSelect2')
+			});
+		})
+	</script>
+	<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/slick/slick.min.js"></script>
+	<script src="js/slick-custom.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/parallax100/parallax100.js"></script>
+	<script>
+		$('.parallax100').parallax100();
+	</script>
+	<!--===============================================================================================-->
+	<script src="vendor/MagnificPopup/jquery.magnific-popup.min.js"></script>
+	<script>
+		$('.gallery-lb').each(function () { // the containers for all your galleries
+			$(this).magnificPopup({
+				delegate: 'a', // the selector for gallery item
+				type: 'image',
+				gallery: {
+					enabled: true
+				},
+				mainClass: 'mfp-fade'
+			});
+		});
+	</script>
+	<!--===============================================================================================-->
+	<script src="vendor/isotope/isotope.pkgd.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/sweetalert/sweetalert.min.js"></script>
+	<script>
+		$('.js-addwish-b2').on('click', function (e) {
+			e.preventDefault();
+		});
+
+		$('.js-addwish-b2').each(function () {
+			var nameProduct = $(this).parent().parent().find('.js-name-b2').html();
+			$(this).on('click', function () {
+				swal(nameProduct, "is added to wishlist !", "success");
+
+				$(this).addClass('js-addedwish-b2');
+				$(this).off('click');
+			});
+		});
+
+		$('.js-addwish-detail').each(function () {
+			var nameProduct = $(this).parent().parent().parent().find('.js-name-detail').html();
+
+			$(this).on('click', function () {
+				swal(nameProduct, "is added to wishlist !", "success");
+
+				$(this).addClass('js-addedwish-detail');
+				$(this).off('click');
+			});
+		});
+
+		/*---------------------------------------------*/
+
+		$('.js-addcart-detail').each(function () {
+			var nameProduct = $(this).parent().parent().parent().parent().find('.js-name-detail').html();
+			$(this).on('click', function () {
+				swal(nameProduct, "is added to cart !", "success");
+			});
+		});
+
+	</script>
+	<!--===============================================================================================-->
+	<script src="vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+	<script>
+		$('.js-pscroll').each(function () {
+			$(this).css('position', 'relative');
+			$(this).css('overflow', 'hidden');
+			var ps = new PerfectScrollbar(this, {
+				wheelSpeed: 1,
+				scrollingThreshold: 1000,
+				wheelPropagation: false,
+			});
+
+			$(window).on('resize', function () {
+				ps.update();
+			})
+		});
+	</script>
+	<!--===============================================================================================-->
+
+	<script src="js/main.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
+
+
+
+	<!--    <script src="buy.js"></script> -->
+</body>
+
+</html>
